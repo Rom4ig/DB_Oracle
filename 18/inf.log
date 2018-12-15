@@ -1,0 +1,50 @@
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Sun Dec 16 00:35:04 2018
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   C:\Users\admid\control.ctl
+Data File:      C:\Users\admid\data.txt
+  Bad File:     C:\Users\admid\data.bad
+  Discard File: C:\Users\admid\data.dis 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table LAB18, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+INTEGERVALUE                        FIRST     *   ,       CHARACTER            
+    SQL string for column : "round(:integervalue, 2)"
+CHARVALUE                            NEXT     *   ,       CHARACTER            
+    SQL string for column : "upper(:charvalue)"
+DATEVALUE                            NEXT     *   ,       DATE YYYY-MM-DD      
+
+
+Table LAB18:
+  2 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             2
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sun Dec 16 00:35:04 2018
+Run ended on Sun Dec 16 00:35:10 2018
+
+Elapsed time was:     00:00:06.17
+CPU time was:         00:00:00.22
